@@ -9,10 +9,10 @@
 ##### B_ij=1{U_ij≤p}.
 ##### Then Pr⁡(B_ij=1)=Pr⁡(U_ij≤p)=p⇒B_ij∼"Bernoulli" (p), independent.
 ##### Now we generate 100 Binomial(10, 1/3) samples using the combo method and computes the Monte Carlo mean, its standard error, and the 95% CLT confidence interval. Here, we state those steps in short-
-	##### Draw x_1,…,x_100  i.i.d. from Binomial(10,1/3).
-	##### Monte Carlo estimator of E[X]: μ ̂=xˉ=1/100 ∑_(i=1)^100▒x_i .
-	##### Standard error of μ ̂(sample sd): se(μ ̂ )=s_x/√100.
-	##### 95% CLT CI: xˉ ±  z_0.975 se(μ ̂ )         with z_0.975≈1.96.
+##### Draw x_1,…,x_100  i.i.d. from Binomial(10,1/3).
+##### Monte Carlo estimator of E[X]: μ ̂=xˉ=1/100 ∑_(i=1)^100▒x_i .
+##### Standard error of μ ̂(sample sd): se(μ ̂ )=s_x/√100.
+##### 95% CLT CI: xˉ ±  z_0.975 se(μ ̂ )         with z_0.975≈1.96.
 #### Sample from Poisson distribution
 ##### We know that if  X ~ Binomial(n, p), the mean is E[X] = n p. As per Poisson approximation: when n is large and p is small with λ = n p fixed then Binomial (n, p) ≈ Poisson(λ). In a Poisson process of rate 1, the count over an interval of length t is N(t) ~ Poisson(λ) with λ = t. Hence, when relating to Binomial and Poisson process viewpoints, we match means via n p = λ = t.
 ##### Method one: Poisson process (transformation via interarrivals)
